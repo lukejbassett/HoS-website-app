@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Search</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet">
+<body>
+    <div>
+        <img src="img/relogo.png" alt="" class="header__img">
+    </div>
+    <div class="searchform">
+    <form action="customersearch.php" method="post" name="inputForm">
+        <table class="tablesearch">
+                <tr class="tableitems">
+                    <td>First Name</td>
+                    <td><input type = "text" name = "Firstname" ></td>
+                </tr>
+                <tr class="tableitems">
+                    <td>Email</td>
+                    <td><input type = "text" name = "Email"></td>
+                </tr>
+                <tr class="tableitems">
+                    <td>Postcode</td>
+                    <td><input type = "text" name = "Postcode"></td>
+                </tr>
+        </table>
+    <p><input type="submit" class="searchButton" name="inputform" value="Submit">
+    <input type="submit" class="button" value="Clear"></p>
+    <p>&nbsp;</p>
+    </form>
+</div>
+
+    <!-- <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <form action="customersearch.php" method="post" name = "customerDetails"></form>
+           <button type="submit" class="searchButton" name=customerDetails>
+             <i class="fa fa-search"></i>
+          </button> -->
+        </div>
+     </div>
+</body>
+</html>

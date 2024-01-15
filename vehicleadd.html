@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Vehicle</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet">
+<body>
+    <div>
+        <img src="img/relogo.png" alt="" class="header__img">
+    </div>
+
+    <!-- Adding a new vehicle -->
+    <div class="searchform">
+    <form action="addVehicle.php" method="post" name = "carDetails">
+
+
+        <h3>Please input car details below:</h3>
+        <table>
+        <tr>
+            <td>Make:</td> 
+            <td><input type = "text" name = "Make"   required></td>
+        </tr>
+        
+        <tr>
+            <td>Model:</td> 
+            <td><input type = "text" name = "Model"  required></td>
+        </tr>
+        <tr>
+            <td>Type:</td> 
+            <td><input type = "text" name = "Type" required></td>
+        </tr>
+        <tr>
+            <td>Colour:</td> 
+            <td><input type = "text" name = "Colour" required></td>
+        </tr>
+        <tr>
+            <td>Fuel:</td> 
+            <td><input type = "text" name = "Fuel" required></td>
+        </tr>
+        <tr>
+            <td>Gearbox:</td> 
+            <td><input type = "text" name = "Gearbox" required></td>
+        </tr>
+        <tr>
+            <td>Registration:</td> 
+            <td><input type = "text" name = "Registration" required></td>
+        </tr>
+        </table>
+        
+        <!--Buttons to submit and clear the form-->
+        <p><input type="submit" class ="button" name="carDetails" value="Submit"/>
+            <input type = "reset" class ="button" value = "Clear"></p>
+        </form>
+    </div>
+</body>
+</html>

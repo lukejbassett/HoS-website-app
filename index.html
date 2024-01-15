@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div>
+        <img src="img/relogo.png" alt="" class="header__img">
+    </div>
+    
+    
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/ferr-488.jpg" style="width:100%" class="responsive">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/mclr-5702.jpg" style="width:100%" class="responsive">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/merc-cla.jpg" style="width:100%" class="responsive">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/fiat-500.jpg" style="width:100%" class="responsive">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/buga-chrn.jpg" style="width:100%" class="responsive">
+        </div>
+        
+        <!-- JS Animations -->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for(i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if(slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+            </script>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <a href="vehicles.html"><button class="btnVehicles"><i class="fa fa-car fa-5x"></i></button></a>
+            <a href="customers.html"><button class="btnCustomers"><i class="fa fa-male fa-5x"></i></button></a>
+            <a href="sales.html"><button class="btnSales"><i class="fa fa-dollar fa-5x"></i></button></a>
+        </div>
+    </body>
+    </html>
